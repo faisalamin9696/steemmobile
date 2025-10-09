@@ -10,7 +10,7 @@ interface Props {
   isFollowing: boolean;
 }
 
-const FollowsTabNavigator = (props: Props): JSX.Element => {
+const FollowsTabNavigator = (props: Props) => {
   const {account, isFollowing} = props;
 
   const Tab = createMaterialTopTabNavigator();

@@ -29,7 +29,7 @@ interface Props {
   unlocking: boolean;
 }
 const PinCodeView = React.forwardRef(
-  (props: Props, ref: React.Ref<any>): JSX.Element => {
+  (props: Props, ref: React.Ref<any>) => {
     const {
       informationText,
       showForgotButton,

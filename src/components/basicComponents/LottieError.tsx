@@ -15,7 +15,7 @@ interface Props {
     style?: StyleProp<ViewStyle>;
 }
 
-const LottieError = (props: Props): JSX.Element => {
+const LottieError = (props: Props) => {
     const { width, height, error, onTryAgain, buttonText, empty, style } = props;
 
     return <View style={style}>{useMemo(() => {

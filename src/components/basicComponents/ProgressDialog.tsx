@@ -8,7 +8,7 @@ interface Props {
 }
 
 
-const ProgressDialog = (props: Props): JSX.Element => {
+const ProgressDialog = (props: Props) => {
     const { visible, setVisible } = props;
     const hideRewardDialog = () => setVisible(false);
 

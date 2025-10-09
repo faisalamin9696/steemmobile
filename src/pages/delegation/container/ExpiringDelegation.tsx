@@ -19,7 +19,7 @@ interface DelegationProps {
   index: number;
 }
 
-const ExpiringDelegation = ({navigation, route}): JSX.Element => {
+const ExpiringDelegation = ({navigation, route}) => {
   const {account} = route?.params;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const accountData: AccountExt =

@@ -12,7 +12,7 @@ interface Props {
 }
 
 
-const ExpandableView = (props: Props): JSX.Element => {
+const ExpandableView = (props: Props) => {
     const { children, maxHeight, expanderStyle, visible, animDuration } = props;
     const [viewHeight] = useState(new Animated.Value(0));
 

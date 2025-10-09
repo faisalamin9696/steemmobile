@@ -23,7 +23,7 @@ import {
 // blockchain api
 import {validateUsername} from '../../../utils/user';
 import AnimatedLottieView from 'lottie-react-native';
-import {wifIsValid} from '../../../steem/CondensorApis';
+import {wifIsValid} from '../../../steem/CondenserApis';
 import {AppColors} from '../../../constants/AppColors';
 import {getAccountExt} from '../../../steem/SteemApis';
 import {
@@ -54,7 +54,7 @@ interface Props {
   route: any;
   navigation: any;
 }
-const LoginPage = (props: Props): JSX.Element => {
+const LoginPage = (props: Props) => {
   //// props
   const {navigation} = props;
   const [loading, setLoading] = useState(false);

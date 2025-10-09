@@ -24,7 +24,7 @@ interface Props {
 }
 
 
-const RewardModal = (props: Props): JSX.Element => {
+const RewardModal = (props: Props) => {
     const { visible, setVisible, setClear, onSelect } = props;
     const loginInfo = useAppSelector(state => state.loginReducer.value);
     const isDraft = - false;

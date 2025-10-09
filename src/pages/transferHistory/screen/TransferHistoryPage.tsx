@@ -10,7 +10,7 @@ import {Text} from 'react-native-paper';
 import {useAppSelector} from '../../../constants/AppFunctions';
 import {useRefreshByUser} from '../../../utils/useRefreshByUser';
 
-const TransferHistoryPage = ({route}): JSX.Element => {
+const TransferHistoryPage = ({route}) => {
   const {data, isAccount} = route.params ?? {};
   const loginInfo = useAppSelector(state => state.loginReducer.value);
 

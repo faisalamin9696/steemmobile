@@ -16,7 +16,7 @@ interface Props {
   onFocus?: () => void;
 }
 
-const SearchBar = (props: Props): JSX.Element => {
+const SearchBar = (props: Props) => {
   const {
     placeholder,
     style,

@@ -5,7 +5,7 @@ import {
   delegateVestingShares,
   steemToVest,
   vestToSteem,
-} from '../../../steem/CondensorApis';
+} from '../../../steem/CondenserApis';
 import {useEffect, useMemo, useState} from 'react';
 import {isFloatOrInt} from '../../../utils/utils';
 import {AppConstants} from '../../../constants/AppConstants';
@@ -96,7 +96,7 @@ const EditorItem = (
   );
 };
 
-const OutgoingItem = (props: DelegationProps): JSX.Element => {
+const OutgoingItem = (props: DelegationProps) => {
   const {account, item, index, loginInfo, steemGlobals, navigation} = props;
   const [update, setUpdate] = useState(false);
   const [loading, setLoading] = useState(false);

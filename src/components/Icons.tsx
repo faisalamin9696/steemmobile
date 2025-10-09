@@ -23,7 +23,7 @@ export const Icons = {
   EvilIcons,
 };
 
-const Icon = ({ type, name, color, size = 24, style, disabled = false }): JSX.Element => {
+const Icon = ({ type, name, color, size = 24, style, disabled = false }) => {
   const fontSize = 24;
   const Tag = type;
   return (

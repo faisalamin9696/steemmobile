@@ -2,7 +2,7 @@ import MainWrapper from '../../../components/wrappers/MainWrapper';
 import React, {useEffect} from 'react';
 import {FollowsTabNavigator} from '..';
 
-const FollowersPage = ({navigation, route}): JSX.Element => {
+const FollowersPage = ({navigation, route}) => {
   const {account, isFollowing} = route.params;
   useEffect(() => {
     navigation.setOptions({

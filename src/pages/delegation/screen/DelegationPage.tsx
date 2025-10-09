@@ -9,7 +9,7 @@ import {useAppSelector} from '../../../constants/AppFunctions';
 import BadgeAvatar from '../../../components/basicComponents/BadgeAvatar';
 import {ExploreDelegation, NewDelegation} from '..';
 
-const DelegationPage = ({navigation, route}): JSX.Element => {
+const DelegationPage = ({navigation, route}) => {
   const {onlyExplore, account, exploreType} = route?.params || {};
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const Tab = createMaterialTopTabNavigator();

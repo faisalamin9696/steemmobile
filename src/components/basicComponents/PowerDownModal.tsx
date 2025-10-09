@@ -16,7 +16,7 @@ import {
   steemToVest,
   vestToSteem,
   withdrawVesting,
-} from '../../steem/CondensorApis';
+} from '../../steem/CondenserApis';
 import {useDispatch} from 'react-redux';
 import ConfirmationDialog from './ConfirmationDialog';
 import {toastConfig} from '../../utils/toastConfig';
@@ -32,7 +32,7 @@ interface Props {
   cancel?: boolean;
 }
 
-const TransferModal = (props: Props): JSX.Element => {
+const TransferModal = (props: Props) => {
   const {visible, setVisible, cancel} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const steemGlobals = useAppSelector(state => state.steemGlobalReducer.value);

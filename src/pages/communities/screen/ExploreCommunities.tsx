@@ -113,7 +113,7 @@ class CommunityItem extends PureComponent<{
   }
 }
 
-const ExploreCommunities = ({navigation, route}): JSX.Element => {
+const ExploreCommunities = ({navigation, route}) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const exploreCommunityKey = `communities-explored`;
   const [rows, setRows] = useState<Community[]>();

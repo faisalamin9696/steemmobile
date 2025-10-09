@@ -8,7 +8,7 @@ interface Props {
   route: any;
 }
 
-const CommunityTabPage = (props: Props): JSX.Element => {
+const CommunityTabPage = (props: Props) => {
   const {navigation, route} = props;
   const {feed_api, type, category} = route?.params || {
     feed_api: '',

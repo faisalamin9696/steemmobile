@@ -10,7 +10,7 @@ interface Props {
     textvariant?: any;
 }
 
-const ContentEditedWrapper = (props: Props): JSX.Element => {
+const ContentEditedWrapper = (props: Props) => {
 
     let { createDate, updateDate, textvariant } = props;
 

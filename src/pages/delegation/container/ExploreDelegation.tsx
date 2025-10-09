@@ -6,7 +6,7 @@ import {AppStyles} from '../../../constants/AppStyles';
 import MainWrapper from '../../../components/wrappers/MainWrapper';
 import {ExpiringDelegation, IncomingDelegations, OutgoingDelegations} from '..';
 
-const ExploreDelegation = ({route}): JSX.Element => {
+const ExploreDelegation = ({route}) => {
   const {account, exploreType} = route?.params;
 
   const Tab = createMaterialTopTabNavigator();

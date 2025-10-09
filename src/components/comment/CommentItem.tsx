@@ -28,7 +28,7 @@ interface Props {
 }
 const PAGE_WIDTH = getWindowDimensions().width;
 
-const CommentItem = (props: Props): JSX.Element => {
+const CommentItem = (props: Props) => {
   const {
     navigation,
     isBlog,

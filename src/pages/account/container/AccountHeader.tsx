@@ -21,7 +21,7 @@ import {useAppSelector} from '../../../constants/AppFunctions';
 import {getResizedAvatar} from '../../../utils/ImageApis';
 import {parseAccountMeta} from '../../../utils/user';
 import {useMutation} from '@tanstack/react-query';
-import {followUser, unfollowUser} from '../../../steem/CondensorApis';
+import {followUser, unfollowUser} from '../../../steem/CondenserApis';
 import {getCredentials} from '../../../utils/realm';
 import {AppConstants} from '../../../constants/AppConstants';
 import {AppRoutes} from '../../../constants/AppRoutes';
@@ -54,7 +54,7 @@ interface CustomAvatarProps {
   isSmall?: boolean;
 }
 
-const AccountHeader = (props: Props): JSX.Element => {
+const AccountHeader = (props: Props) => {
   const {navigation, data, isAccount, containerStyle, onExpanded, isExpanded} =
     props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);

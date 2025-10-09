@@ -12,7 +12,7 @@ import {HStack, VStack} from '@react-native-material/core';
 import React, {useContext, useEffect, useMemo, useState} from 'react';
 import {useSharedValue} from 'react-native-reanimated';
 import {useAppSelector} from '../../../constants/AppFunctions';
-import {claimRewardBalance, vestToSteem} from '../../../steem/CondensorApis';
+import {claimRewardBalance, vestToSteem} from '../../../steem/CondenserApis';
 import {getCredentials} from '../../../utils/realm';
 import {saveLoginInfo} from '../../../utils/handlers';
 import {AppConstants} from '../../../constants/AppConstants';

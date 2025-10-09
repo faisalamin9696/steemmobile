@@ -32,9 +32,9 @@ export function parseJsonTags(post) {
   return normalizeTags(post['json_metadata'], post['category']);
 }
 
-export function hasNsfwTag(content: Feed | Post) {
+export function hasNsfwTag(content: PostHivemind) {
   const nsfwRegex = /\b(nsfw|adult|explicit|fuck|dick|anal|cock|penis|ass)\b/i; // Add more NSFW words here
-  const parsed = parsePostMeta(content.json_metadata);
+  const parsed = parsePostMeta(JSON.stringify(content.json_metadata));
   return nsfwRegex.test(
     content.title?.toLowerCase() + JSON.stringify(parsed.tags),
   );

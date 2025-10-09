@@ -23,7 +23,7 @@ interface Props {
 
 const {width} = getWindowDimensions();
 
-const ReplyForm = (props: Props): JSX.Element => {
+const ReplyForm = (props: Props) => {
   const {comment, rootComment, postInteractionRef} = props;
   const postReplies =
     useAppSelector(state => state.repliesReducer.values)[

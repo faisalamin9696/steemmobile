@@ -19,7 +19,7 @@ import CommentItem from '../../../components/comment';
 import BasicDialog from '../../../components/basicComponents/BasicDialog';
 import SearchBar from '../../../components/basicComponents/SearchBar';
 
-const SearchPage = ({navigation, route}): JSX.Element => {
+const SearchPage = ({navigation, route}) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const [refreshing, setRefreshing] = useState(false);
   const [segmentValue, setSegmentValue] = useState<

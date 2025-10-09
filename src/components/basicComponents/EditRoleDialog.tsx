@@ -10,7 +10,7 @@ import {
   setUserRole,
   setUserRoleTitle,
   setUserTitle,
-} from '../../steem/CondensorApis';
+} from '../../steem/CondenserApis';
 import {useAppSelector} from '../../constants/AppFunctions';
 import {AppConstants} from '../../constants/AppConstants';
 import {getCredentials} from '../../utils/realm';
@@ -30,7 +30,7 @@ interface Props {
   isAccount?: boolean;
 }
 
-const EditRoleDialog = (props: Props): JSX.Element => {
+const EditRoleDialog = (props: Props) => {
   const {comment, visible, setVisible} = props;
   const hideEditDialog = () => setVisible(false);
   const [title, setTitle] = useState(comment.author_title);

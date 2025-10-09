@@ -18,7 +18,7 @@ interface Props {
   route: any;
 }
 
-const WebBrowser = (props: Props): JSX.Element => {
+const WebBrowser = (props: Props) => {
   const {route, navigation} = props;
   const url = useMemo(() => route.params?.url, []);
 

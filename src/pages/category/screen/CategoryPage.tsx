@@ -8,7 +8,7 @@ interface Props {
   route: any;
 }
 
-const CategoryPage = (props: Props): JSX.Element => {
+const CategoryPage = (props: Props) => {
   const {navigation, route} = props;
 
   const {category} = route.params;

@@ -95,7 +95,7 @@ const CustomProgress = (props: CustomProgressProps) => {
   );
 };
 
-const WalletHeader = (props: Props): JSX.Element => {
+const WalletHeader = (props: Props) => {
   const {data, clubData, onExpanded, isExpanded} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const profileInfo =

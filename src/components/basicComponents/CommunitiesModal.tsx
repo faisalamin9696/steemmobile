@@ -32,7 +32,7 @@ interface Props {
   setClear?: boolean;
 }
 
-const CommunitiesModal = (props: Props): JSX.Element => {
+const CommunitiesModal = (props: Props) => {
   const {visible, setVisible, setClear, onSelect} = props;
 
   let loginInfo = useAppSelector(state => state.loginReducer.value);

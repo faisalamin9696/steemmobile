@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AppConstants } from "../../constants/AppConstants";
-import { signImage, uploadImage } from "../../steem/CondensorApis";
+import { signImage, uploadImage } from "../../steem/CondenserApis";
 import { getCredentials } from "../../utils/realm";
 import { ActivityIndicator, Platform, StyleProp, ViewStyle } from "react-native";
 import ImagePicker, { Image, ImageOrVideo } from 'react-native-image-crop-picker';
@@ -36,7 +36,7 @@ interface Props {
 
 let imagesToUpload: any[] = [];
 
-const ImagePickerButton = (props: Props): JSX.Element => {
+const ImagePickerButton = (props: Props) => {
     const { handleStartUploading, handleEndUploading,
         handleEndPicked, iconSize, buttonMode, disabled, style, innerIconSize,
         sheetID, handleSuccessfulUpload } = props;

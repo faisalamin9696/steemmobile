@@ -9,7 +9,7 @@ interface Props {
   navigation: any;
   route: any;
 }
-const CommunityTabNavigator = (props: Props): JSX.Element => {
+const CommunityTabNavigator = (props: Props) => {
   const {route} = props;
   const Tab = createMaterialTopTabNavigator();
   const _renderLabel = (focused, children) => {

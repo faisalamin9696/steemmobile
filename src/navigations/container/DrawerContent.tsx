@@ -17,7 +17,7 @@ import auth from '@react-native-firebase/auth';
 import {ScrollView} from 'react-native';
 import messaging from '@react-native-firebase/messaging';
 
-const DrawerContent = ({navigation}): JSX.Element => {
+const DrawerContent = ({navigation}) => {
   const dispatch = useDispatch();
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const [progressDialog, setProgressDialog] = useState(false);

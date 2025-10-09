@@ -15,7 +15,7 @@ import {LottieLoading} from '../../../components/basicComponents/LottieLoading';
 import {AppConstants} from '../../../constants/AppConstants';
 import {useRefreshByUser} from '../../../utils/useRefreshByUser';
 
-const CommunityReportPage = ({navigation, route}): JSX.Element => {
+const CommunityReportPage = ({navigation, route}) => {
   const {category} = route?.params;
   const [rows, setRows] = useState<CommunityReport[]>();
   let [searchText, setSearchText] = useState('');

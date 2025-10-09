@@ -32,7 +32,7 @@ import NewSnippetPage from '../pages/snippet';
 import DelegationPage from '../pages/delegation/screen/DelegationPage';
 import pinCodeScreen from '../pages/pinCode';
 
-const StackNavigator = ({initRoute}): JSX.Element => {
+const StackNavigator = ({initRoute}) => {
   const Stack = createNativeStackNavigator();
   const Drawer = createDrawerNavigator();
   const {isThemeDark} = useContext(PreferencesContext);

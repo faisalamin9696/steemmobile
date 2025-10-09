@@ -15,7 +15,7 @@ interface Props {
 
 
 }
-const CustomIconButton = (props: Props): JSX.Element => {
+const CustomIconButton = (props: Props) => {
     const { type, name, color, style, disabled, size, loading, children } = props;
 
     return (loading ? <ActivityIndicator /> :

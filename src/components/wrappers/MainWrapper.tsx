@@ -7,7 +7,7 @@ interface Props {
     style?: StyleProp<ViewStyle>;
     children: any;
 }
-const MainWrapper = (props: Props): JSX.Element => {
+const MainWrapper = (props: Props) => {
     const { style, children } = props;
     const { isThemeDark } = useContext(PreferencesContext);
 

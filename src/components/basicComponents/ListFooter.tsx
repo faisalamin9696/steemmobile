@@ -8,7 +8,7 @@ interface Props {
     loading: boolean;
 
 }
-const ListFooter = (props: Props): JSX.Element => {
+const ListFooter = (props: Props) => {
     const { marginTop, marginBottom, loading } = props;
 
 

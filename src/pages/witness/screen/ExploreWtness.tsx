@@ -13,7 +13,7 @@ import {abbreviateNumber} from '../../../utils/utils';
 import {parseUsername} from '../../../utils/user';
 import TimeAgoWrapper from '../../../components/wrappers/TimeAgoWrapper';
 import Icon, {Icons} from '../../../components/Icons';
-import {voteForWitness} from '../../../steem/CondensorApis';
+import {voteForWitness} from '../../../steem/CondenserApis';
 import {AppConstants} from '../../../constants/AppConstants';
 import MainWrapper from '../../../components/wrappers/MainWrapper';
 import {getCredentials} from '../../../utils/realm';
@@ -196,7 +196,7 @@ const WitnessItem = (props: CommunityItemProps) => {
   );
 };
 
-const ExploreWitness = ({navigation, route}): JSX.Element => {
+const ExploreWitness = ({navigation, route}) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const exploreWitnessKey = `witness-explored`;
   const [rows, setRows] = useState<Community[]>();

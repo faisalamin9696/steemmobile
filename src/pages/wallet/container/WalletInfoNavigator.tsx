@@ -11,7 +11,7 @@ interface Props {
   data: AccountExt;
   isAccount?: boolean;
 }
-const WalletInfoNavigator = (props: Props): JSX.Element => {
+const WalletInfoNavigator = (props: Props) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const Tab = createMaterialTopTabNavigator();
   const {data, isAccount} = props;

@@ -17,7 +17,7 @@ import ModalHeader from './ModalHeader';
 import {AppConstants} from '../../constants/AppConstants';
 import {isFloatOrInt} from '../../utils/utils';
 import {getCredentials} from '../../utils/realm';
-import {transferAsset} from '../../steem/CondensorApis';
+import {transferAsset} from '../../steem/CondenserApis';
 import {useDispatch} from 'react-redux';
 import {saveLoginInfo} from '../../utils/handlers';
 import ConfirmationDialog from './ConfirmationDialog';
@@ -33,7 +33,7 @@ interface Props {
   isSteem: boolean;
 }
 
-const TransferModal = (props: Props): JSX.Element => {
+const TransferModal = (props: Props) => {
   const {visible, setVisible, isSteem} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const [fromInput, setFromInput] = useState(loginInfo.name);

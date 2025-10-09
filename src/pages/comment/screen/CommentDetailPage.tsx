@@ -29,9 +29,9 @@ import {extractMetadata} from '../../../utils/editor';
 import {AppRoutes} from '../../../constants/AppRoutes';
 import {AppConstants} from '../../../constants/AppConstants';
 import {delay} from '../../../utils/editor';
-import {mutePost, pinPost} from '../../../steem/CondensorApis';
+import {mutePost, pinPost} from '../../../steem/CondenserApis';
 import {getCredentials} from '../../../utils/realm';
-import {deleteComment} from '../../../steem/CondensorApis';
+import {deleteComment} from '../../../steem/CondenserApis';
 import {MakeQueryKey} from '../../../utils/utils';
 import PostBodyView from '../renderer/postBodyView';
 import {isAccountCommunity} from '../../../utils/CommunityValidation';
@@ -50,7 +50,7 @@ interface Props {
 }
 const WIDTH = getWindowDimensions().width;
 
-const CommentDetailPage = (props: Props): JSX.Element => {
+const CommentDetailPage = (props: Props) => {
   const {navigation, route} = props;
 
   useEffect(() => {

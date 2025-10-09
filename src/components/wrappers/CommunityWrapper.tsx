@@ -9,7 +9,7 @@ interface Props {
     route: any;
     comment: Post | Feed;
 }
-const CommunityWrapper = (props: Props): JSX.Element => {
+const CommunityWrapper = (props: Props) => {
     const { navigation, route, comment } = props;
 
 

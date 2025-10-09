@@ -19,7 +19,7 @@ import {AppConstants} from '../../../constants/AppConstants';
 import {addSnippet, updateSnippet} from '../../../utils/realm';
 
 
-const NewSnippetPage = ({navigation, route}): JSX.Element => {
+const NewSnippetPage = ({navigation, route}) => {
   const {snippet} = route?.params || {};
   const [isNew, setIsNew] = useState(snippet ? false : true);
   let loginInfo = useAppSelector(state => state.loginReducer.value);

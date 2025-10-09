@@ -29,7 +29,7 @@ interface Props {
   comment: Post;
 }
 
-const Replies = (props: Props): JSX.Element => {
+const Replies = (props: Props) => {
   let {navigation, comment, route} = props;
   const commentInfo: Post = (useAppSelector(
     state => state.commentReducer.values,

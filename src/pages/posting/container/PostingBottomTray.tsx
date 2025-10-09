@@ -37,7 +37,7 @@ interface Props {
   ) => void;
 }
 
-const PostingBottomTray = (props: Props): JSX.Element => {
+const PostingBottomTray = (props: Props) => {
   const {
     handleOnClear,
     handleRewardChange,

@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {vestToSteem} from '../../../steem/CondensorApis';
+import {vestToSteem} from '../../../steem/CondenserApis';
 import {useAppSelector} from '../../../constants/AppFunctions';
 import {HStack, VStack} from '@react-native-material/core';
 import TimeAgoWrapper from '../../../components/wrappers/TimeAgoWrapper';
@@ -15,7 +15,7 @@ interface Props {
   context: any;
   socialUrl?: any;
 }
-const TransferHistoryItem = (props: Props): JSX.Element => {
+const TransferHistoryItem = (props: Props) => {
   let {op, context, socialUrl} = props;
 
   const steemGlobals = useAppSelector(state => state.steemGlobalReducer.value);

@@ -31,7 +31,7 @@ interface Props {
 
 
 }
-const CardTextInput = (props: Props): JSX.Element => {
+const CardTextInput = (props: Props) => {
     const { value, onChangeText, placeholder, cardStyle, inputStyle,
         inputRight, inputLeft, multiline, onSelectionChange,
         mode, inputMode, autoCapitalize, disabled, numberOfLines, onFocus,

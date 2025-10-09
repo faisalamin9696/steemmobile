@@ -21,7 +21,7 @@ import {
   steemToVest,
   transferToSavings,
   transferToVesting,
-} from '../../steem/CondensorApis';
+} from '../../steem/CondenserApis';
 import {useDispatch} from 'react-redux';
 import {saveLoginInfo} from '../../utils/handlers';
 import ConfirmationDialog from './ConfirmationDialog';
@@ -39,7 +39,7 @@ interface Props {
   isSteem: boolean;
 }
 
-const PowerupModal = (props: Props): JSX.Element => {
+const PowerupModal = (props: Props) => {
   const {visible, setVisible, isSteem, isSaving} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const steemGlobals = useAppSelector(state => state.steemGlobalReducer.value);

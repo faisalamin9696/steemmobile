@@ -23,7 +23,7 @@ interface Props {
   rootComment: Post;
   isPostLoading?: boolean;
 }
-const DetailsFooter = (props: Props): JSX.Element => {
+const DetailsFooter = (props: Props) => {
   const {comment, handleCommentClick, translateY} = props;
   const dispatch = useDispatch();
   const footerAction = useAnimatedStyle(() => {

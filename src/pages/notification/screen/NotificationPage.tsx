@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Button, MD2Colors} from 'react-native-paper';
 import {FlatList, LayoutAnimation, RefreshControl} from 'react-native';
 import MainWrapper from '../../../components/wrappers/MainWrapper';
-import {markSteemNotifications} from '../../../steem/CondensorApis';
+import {markSteemNotifications} from '../../../steem/CondenserApis';
 import {HStack, VStack} from '@react-native-material/core';
 import {useAppSelector} from '../../../constants/AppFunctions';
 import {ScrollingTabHandler} from '../../../components/ScrollingTabHandler';
@@ -27,7 +27,7 @@ interface Props {
   route: any;
 }
 
-const NotificationPage = (props: Props): JSX.Element => {
+const NotificationPage = (props: Props) => {
   const {navigation, route} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const lastContentOffset = useSharedValue(0);

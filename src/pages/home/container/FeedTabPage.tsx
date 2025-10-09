@@ -4,13 +4,14 @@ import React from 'react';
 import TabFlatList from '../../../components/basicComponents/TabFlatList';
 import {getItemFromStorage} from '../../../utils/realm';
 import {AppStrings} from '../../../constants/AppStrings';
+import TabFlatListHivemind from '../../../components/basicComponents/TabFlatListHivemind';
 
 interface Props {
   navigation: any;
   route: any;
 }
 
-const FeedTabPage = (props: Props): JSX.Element => {
+const FeedTabPage = (props: Props) => {
   const {navigation, route} = props;
   const {feed_api, route: parentRoute} = route.params;
   const parent = navigation?.getParent()?.getParent();

@@ -26,7 +26,7 @@ export interface BeneType {
   weight: number;
 }
 
-const BenefModal = (props: Props): JSX.Element => {
+const BenefModal = (props: Props) => {
   const {visible, setVisible, setClear, onChange} = props;
 
   const loginInfo = useAppSelector(state => state.loginReducer.value);

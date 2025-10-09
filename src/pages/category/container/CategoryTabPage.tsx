@@ -7,7 +7,7 @@ interface Props {
   route: any;
 }
 
-const CategoryTabPage = (props: Props): JSX.Element => {
+const CategoryTabPage = (props: Props) => {
   const {route} = props;
   const {feed_api, category} = route?.params || {
     feed_api: '',

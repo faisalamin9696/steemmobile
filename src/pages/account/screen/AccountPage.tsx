@@ -10,7 +10,7 @@ interface Props {
   route: any;
 }
 
-const AccountPage = (props: Props): JSX.Element => {
+const AccountPage = (props: Props) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
 
   return (

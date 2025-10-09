@@ -24,7 +24,7 @@ interface Props {
   isSearch?: boolean;
 }
 
-const CommentHead = (props: Props): JSX.Element => {
+const CommentHead = (props: Props) => {
   let {navigation, comment, isDetail, isCommunity, route} = props;
   const {account} = route?.params || {account: '', feed_api: '', type: ''};
   const [copyModal, setCopyModal] = useState({open: false, body: ''});

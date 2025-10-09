@@ -11,7 +11,7 @@ interface Props {
     withoutUtc?: boolean;
 }
 
-const TimeAgoWrapper = (props: Props): JSX.Element => (
+const TimeAgoWrapper = (props: Props) => (
     <View style={{ width: 'auto' }}>
         <Tooltip title={moment(props.date).format('lll') ?? getTimeFromNow(props.date, props.withoutUtc ?? false)}>
             <Text variant={props.textvariant ?? "bodySmall"}>{getTimeFromNow(props.date, props.withoutUtc ?? false)?.toLowerCase()}</Text>

@@ -23,7 +23,7 @@ import {saveProfileHandler} from '../../../redux/reducers/ProfileReducer';
 // import PromotedPostsCarousel from './PromotedPostsCarousel';
 // import {View} from 'react-native-animatable';
 
-const FeedTabNavigator = ({navigation, route}): JSX.Element => {
+const FeedTabNavigator = ({navigation, route}) => {
   const Tab = createMaterialTopTabNavigator();
   const {isThemeDark} = useContext(PreferencesContext);
   const isExtended = route?.params?.isExtended ?? true;
@@ -33,12 +33,10 @@ const FeedTabNavigator = ({navigation, route}): JSX.Element => {
   const accountData: AccountExt | undefined = getItemFromStorage(
     AppStrings.CURRENT_USER_SCHEMA,
   );
-  const queryClient = useQueryClient();
   const {
     isSuccess: isSuccess2,
     data: data2,
     isError,
-    error,
   } = useQuery({
     queryKey: [`userData-${accountData?.name}`],
     enabled: accountData !== undefined && accountData.login === true,

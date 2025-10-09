@@ -14,7 +14,7 @@ interface Props {
   route: any;
 }
 
-const WalletPage = (props: Props): JSX.Element => {
+const WalletPage = (props: Props) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const clubKey = `${loginInfo.name}-CLUB`;
   const clubData = useQuery({

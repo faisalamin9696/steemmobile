@@ -7,7 +7,7 @@ interface Props {
   route: any;
 }
 
-const AccountTabPage = (props: Props): JSX.Element => {
+const AccountTabPage = (props: Props) => {
   const {navigation, route} = props;
   const {feed_api, isAccount} = route.params;
   const loginInfo = useAppSelector(state => state.loginReducer.value);

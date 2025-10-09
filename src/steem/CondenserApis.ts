@@ -12,7 +12,7 @@ global.Buffer = global.Buffer || require('buffer').Buffer;
 
 const DEFAULT_SERVER = AppStrings.RPC_SERVERS;
 
-export let client = new Client(DEFAULT_SERVER, {
+export let client = new Client(AppStrings.RPC_SERVERS[0], {
   timeout: AppStrings.CHAIN_TIMEOUT,
   addressPrefix: AppStrings.CHAIN_PREFIX,
   chainId: AppStrings.CHAIN_ID,

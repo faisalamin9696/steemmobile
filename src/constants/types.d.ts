@@ -63,6 +63,55 @@ type Feed = {
   is_new: number = 0
 };
 
+type PostHivemind =  {
+  post_id: number;
+  author: string;
+  permlink: string;
+  category: string;
+  title: string;
+  body: string;
+  json_metadata: {
+    tags: string[];
+    users: string[];
+    image: string[];
+    links: string[];
+    app: string;
+    format: string;
+  };
+  created: string; // ISO 8601 date string
+  updated: string; // ISO 8601 date string
+  depth: number;
+  children: number;
+  net_rshares: number;
+  is_paidout: boolean;
+  payout_at: string; // ISO 8601 date string
+  payout: number;
+  pending_payout_value: string; // e.g., "6.215 SBD"
+  author_payout_value: string; // e.g., "0.000 SBD"
+  curator_payout_value: string; // e.g., "0.000 SBD"
+  promoted: string; // e.g., "0.000 SBD"
+  replies: string[];
+  active_votes: Array<{
+    voter: string;
+    rshares: string;
+  }>;
+  author_reputation: number;
+  stats: {
+    hide: boolean;
+    gray: boolean;
+    total_votes: number;
+    flag_weight: number;
+  };
+  beneficiaries: Array<{
+    account: string;
+    weight: number;
+  }>;
+  max_accepted_payout: string; // e.g., "1000000.000 SBD"
+  percent_steem_dollars: number;
+  url: string;
+  blacklists: string[];
+}
+
 type Post = Feed & {
   parent_author: string
   parent_permlink: string

@@ -23,7 +23,7 @@ interface Props {
 
 }
 
-const CurrencyView = (props: Props): JSX.Element => {
+const CurrencyView = (props: Props) => {
 
     const { currencytitle, amount, amountSuffix, amountPrefix,
         expanadedView, expanableHeight,

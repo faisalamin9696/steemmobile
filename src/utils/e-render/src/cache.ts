@@ -1,4 +1,4 @@
-import LRUCache from 'lru-cache';
+import {LRUCache} from 'lru-cache';
 
 let options = {
   max: 60,

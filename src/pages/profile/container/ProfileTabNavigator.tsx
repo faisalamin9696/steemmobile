@@ -11,7 +11,7 @@ interface Props {
   route: any;
   onTabChange?: (isWallet: boolean) => void;
 }
-const ProfileTabNavigator = (props: Props): JSX.Element => {
+const ProfileTabNavigator = (props: Props) => {
   const {data, onTabChange} = props;
   const Tab = createMaterialTopTabNavigator();
 

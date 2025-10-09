@@ -18,7 +18,7 @@ interface Props {
   route: any;
 }
 
-const AccountCommunityTabPage = (props: Props): JSX.Element => {
+const AccountCommunityTabPage = (props: Props) => {
   const {navigation, route} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const accountCommunityKey = `communities-${loginInfo.name}`;

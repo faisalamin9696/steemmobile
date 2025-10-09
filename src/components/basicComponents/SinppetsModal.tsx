@@ -166,7 +166,7 @@ interface Props {
   navigation: any;
 }
 
-const SnippetsModal = (props: Props): JSX.Element => {
+const SnippetsModal = (props: Props) => {
   const {visible, setVisible, setClear, onSelect, navigation} = props;
   let loginInfo = useAppSelector(state => state.loginReducer.value);
   const hideSnipDialog = () => setVisible(false);

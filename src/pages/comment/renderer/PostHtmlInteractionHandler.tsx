@@ -9,7 +9,6 @@ import React, {
 import {
   PermissionsAndroid,
   Platform,
-  SafeAreaView,
   View,
   Text,
   Linking,
@@ -31,6 +30,7 @@ import {isAccountCommunity} from '../../../utils/CommunityValidation';
 import {AppRoutes} from '../../../constants/AppRoutes';
 import {empty_comment} from '../../../utils/placeholders';
 import {getResizedImage} from '../../../utils/ImageApis';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 interface Props {
   navigation: any;

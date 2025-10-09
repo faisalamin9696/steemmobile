@@ -10,7 +10,7 @@ interface Props {
   navigation: any;
   item: {name: string; title: string; contact: string; contactType: string};
 }
-const AboutItem = (props: Props): JSX.Element => {
+const AboutItem = (props: Props) => {
   const {navigation, item} = props;
 
   //   const hideButton = item.contactType === 'account';

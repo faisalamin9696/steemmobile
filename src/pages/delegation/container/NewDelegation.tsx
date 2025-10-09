@@ -14,7 +14,7 @@ import {
   steemToVest,
   delegateVestingShares,
   vestToSteem,
-} from '../../../steem/CondensorApis';
+} from '../../../steem/CondenserApis';
 import {getResizedAvatar} from '../../../utils/ImageApis';
 import {saveLoginInfo} from '../../../utils/handlers';
 import {isFloatOrInt} from '../../../utils/utils';
@@ -23,7 +23,7 @@ import CardTextInput from '../../../components/basicComponents/CardTextInput';
 import ConfirmationDialog from '../../../components/basicComponents/ConfirmationDialog';
 import {toastConfig} from '../../../utils/toastConfig';
 
-const NewDelegation = ({route}): JSX.Element => {
+const NewDelegation = ({route}) => {
   const {account} = route?.params || {};
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const steemGlobals = useAppSelector(state => state.steemGlobalReducer.value);

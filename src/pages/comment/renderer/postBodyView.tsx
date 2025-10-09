@@ -1,6 +1,5 @@
 import React, {Fragment, useState, useEffect, useContext, useRef} from 'react';
 import {
-  SafeAreaView,
   PermissionsAndroid,
   Platform,
   View,
@@ -26,6 +25,7 @@ import {isAccountCommunity} from '../../../utils/CommunityValidation';
 import {PreferencesContext} from '../../../contexts/ThemeContext';
 import {empty_comment} from '../../../utils/placeholders';
 import {getResizedImage} from '../../../utils/ImageApis';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const WIDTH = getWindowDimensions().width;
 

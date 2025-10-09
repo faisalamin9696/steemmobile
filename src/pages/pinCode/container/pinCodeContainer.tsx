@@ -32,7 +32,7 @@ interface Props {
   hideCloseButton: boolean;
 }
 
-const PinCodeContainer = (props: Props): JSX.Element => {
+const PinCodeContainer = (props: Props) => {
   let screenRef: any = null;
   const {pinCodeParams, hideCloseButton, navigation} = props;
 
@@ -107,7 +107,7 @@ const PinCodeContainer = (props: Props): JSX.Element => {
 
     setProgressDialog(true);
     await delay(500);
-    await Keychain.resetInternetCredentials(accountsKey);
+    await Keychain.resetInternetCredentials({"server": accountsKey});
     Keychain.resetGenericPassword()
       .then(() => {
         auth().signOut();
@@ -193,7 +193,7 @@ const PinCodeContainer = (props: Props): JSX.Element => {
         Encrypt(credentials.password),
       );
       if (stored_cred) {
-        await Keychain.resetInternetCredentials(accountsKey);
+        await Keychain.resetInternetCredentials({server:accountsKey});
 
         onPinRemoveSuccess();
         // let keysList: any[] = [];

@@ -21,7 +21,7 @@ interface Props {
   rootComment: Post | Feed;
 }
 
-const Reply = (props: Props): JSX.Element => {
+const Reply = (props: Props) => {
   const {comment} = props;
   const commentInfo: Post = (useAppSelector(
     state => state.commentReducer.values,

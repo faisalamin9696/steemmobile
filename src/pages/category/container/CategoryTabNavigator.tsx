@@ -10,7 +10,7 @@ interface Props {
     navigation: any;
     route: any;
 }
-const CategoryTabNavigator = (props: Props): JSX.Element => {
+const CategoryTabNavigator = (props: Props) => {
     const { route } = props;
     const Tab = createMaterialTopTabNavigator();
     const _renderLabel = (focused, children) => {

@@ -11,7 +11,7 @@ import {parseAccountMeta} from '../../utils/user';
 import {Icons} from '../../components/Icons';
 import {AppRoutes} from '../../constants/AppRoutes';
 
-const AppBarHeader = ({navigation}): JSX.Element => {
+const AppBarHeader = ({navigation}) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const defaultLogo = require('../../../assets/img/default_icon.png');
   const logoImageUri = Image.resolveAssetSource(defaultLogo).uri;

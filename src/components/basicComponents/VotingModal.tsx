@@ -64,7 +64,7 @@ class ItemCard extends PureComponent<ItemProps> {
   }
 }
 
-const VotingModal = (props: Props): JSX.Element => {
+const VotingModal = (props: Props) => {
   const {visible, setVisible, setClear, handleVote} = props;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const globalData = useAppSelector(state => state.steemGlobalReducer.value);

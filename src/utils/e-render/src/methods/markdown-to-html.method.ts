@@ -2,6 +2,7 @@ import {traverse} from './traverse.method';
 import {sanitizeHtml} from './sanitize-html.method';
 import {DOMParser, ENTITY_REGEX} from '../consts';
 import xmldom from 'xmldom';
+import CryptoJS from 'crypto-js';
 
 const lolight = require('lolight');
 const {Remarkable} = require('remarkable');
@@ -50,7 +51,6 @@ export function markdownToHTML(
   try {
     if (entities && forApp) {
       entities.forEach(entity => {
-        const CryptoJS = require('react-native-crypto-js');
         const encData = CryptoJS.AES.encrypt(entity, 'key').toString();
         const encyptedEntity = CryptoJS.enc.Base64.stringify(
           CryptoJS.enc.Utf8.parse(encData),
@@ -80,7 +80,6 @@ export function markdownToHTML(
   //decrypt and put back entiteis
   if (forApp && output) {
     encEntities.forEach(encEntity => {
-      const CryptoJS = require('react-native-crypto-js');
       const decData = CryptoJS.enc.Base64.parse(encEntity).toString(
         CryptoJS.enc.Utf8,
       );

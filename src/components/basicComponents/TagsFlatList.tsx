@@ -17,7 +17,7 @@ interface Props {
   disableDelete?: boolean;
 }
 
-const TagsFlatList = (props: Props): JSX.Element => {
+const TagsFlatList = (props: Props) => {
   const {
     tags,
     onDragEnd,

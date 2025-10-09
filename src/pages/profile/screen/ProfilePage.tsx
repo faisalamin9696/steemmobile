@@ -21,7 +21,7 @@ interface Props {
   route: any;
 }
 const {width} = getWindowDimensions();
-const ProfilePage = (props: Props): JSX.Element => {
+const ProfilePage = (props: Props) => {
   const {route} = props;
   let {account} = route?.params || {account: ''};
   const dispatch = useDispatch();

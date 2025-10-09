@@ -11,7 +11,7 @@ import {OutgoingItem} from '..';
 import {toastConfig} from '../../../utils/toastConfig';
 import {useRefreshByUser} from '../../../utils/useRefreshByUser';
 
-const OutgoingDelegations = ({navigation, route}): JSX.Element => {
+const OutgoingDelegations = ({navigation, route}) => {
   const {account} = route?.params;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const isSelf = account.name === loginInfo.name;

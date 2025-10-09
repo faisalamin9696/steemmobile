@@ -33,7 +33,7 @@ class ListItem extends PureComponent<{navigation; item; index}> {
 
 let _onEndReachedCalledDuringMomentum = true;
 
-const FollowsTabPage = ({navigation, route}): JSX.Element => {
+const FollowsTabPage = ({navigation, route}) => {
   const {account, isFollowing, name} = route.params;
   const followKey = `${account}-${name}`;
   const [totalFollowers, setTotalFollowers] = useState(0);

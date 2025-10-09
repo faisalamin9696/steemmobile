@@ -22,7 +22,7 @@ import {
 import {
     signImage,
     uploadImage,
-} from "../../steem/CondensorApis";
+} from "../../steem/CondenserApis";
 import { useAppSelector } from "../../constants/AppFunctions";
 import { MaterialDarkTheme, MaterialLightTheme } from "../../utils/theme";
 import { openSettings } from "react-native-permissions";
@@ -58,7 +58,7 @@ export interface MediaInsertData {
     status: string;
 }
 
-const ImageUploadButton = (props: Props): JSX.Element => {
+const ImageUploadButton = (props: Props) => {
     const {
         handleImagesPicked,
         handleUploadError,

@@ -10,7 +10,7 @@ interface Props {
 
 }
 
-const LottieLoading = (props: Props): JSX.Element => {
+const LottieLoading = (props: Props) => {
     const { width, height, loading } = props;
     return <View>{useMemo(() => {
         return loading ? <AnimatedLottieView

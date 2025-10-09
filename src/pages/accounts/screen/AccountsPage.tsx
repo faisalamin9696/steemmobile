@@ -13,7 +13,7 @@ import {AppColors} from '../../../constants/AppColors';
 import {saveLoginInfo} from '../../../utils/handlers';
 import {useDispatch} from 'react-redux';
 import {AccountItem} from '../container/AccountItem';
-import {getKeyType} from '../../../steem/CondensorApis';
+import {getKeyType} from '../../../steem/CondenserApis';
 import {useEffect, useLayoutEffect, useState} from 'react';
 import {SharedWebCredentials} from 'react-native-keychain';
 import {savePostHandler} from '../../../redux/reducers/PostReducer';
@@ -21,7 +21,7 @@ import {saveCommentHandler} from '../../../redux/reducers/CommentReducer';
 import {LottieLoading} from '../../../components/basicComponents/LottieLoading';
 import {useRefreshByUser} from '../../../utils/useRefreshByUser';
 
-const AccountsPage = ({navigation}): JSX.Element => {
+const AccountsPage = ({navigation}) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const dispatch = useDispatch();
   const accountsKey = 'user-accounts';

@@ -54,7 +54,7 @@ import {
 } from '../../../utils/editor';
 import {getSimplePost} from '../../../steem/SteemApis';
 import {BeneType} from '../../../components/basicComponents/BenefModal';
-import {publishContent} from '../../../steem/CondensorApis';
+import {publishContent} from '../../../steem/CondenserApis';
 import {
   getCredentials,
   getPostDraft,
@@ -81,7 +81,7 @@ interface Props {
   navigation: any;
   route: any;
 }
-const PostingPage = (props: Props): JSX.Element => {
+const PostingPage = (props: Props) => {
   const {navigation, route} = props;
   let {
     isEdit: edit,

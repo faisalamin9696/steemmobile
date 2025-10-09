@@ -12,7 +12,7 @@ import {parseAccountMeta} from '../../../utils/user';
 import ImagePickerButton from '../../../components/basicComponents/ImagePickerButton';
 import {AppConstants} from '../../../constants/AppConstants';
 import {getCredentials} from '../../../utils/realm';
-import {updateProfile} from '../../../steem/CondensorApis';
+import {updateProfile} from '../../../steem/CondenserApis';
 import {saveLoginInfo} from '../../../utils/handlers';
 import {useDispatch} from 'react-redux';
 import {closeActionSheet} from '../../../utils/utils';
@@ -47,7 +47,7 @@ const CardItem = (props: CardProps) => {
   );
 };
 
-const EditAccountPage = ({navigation, route}): JSX.Element => {
+const EditAccountPage = ({navigation, route}) => {
   const loginInfo = useAppSelector(state => state.loginReducer.value);
   const parsedData = parseAccountMeta(loginInfo?.posting_json_metadata ?? '{}');
   const [name, setName] = useState(parsedData.username ?? '');

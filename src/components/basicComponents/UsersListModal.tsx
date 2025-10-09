@@ -17,7 +17,7 @@ interface Props {
 }
 
 
-const UsersListModal = (props: Props): JSX.Element => {
+const UsersListModal = (props: Props) => {
     const { visible, setVisible, usersData, onSelect } = props;
     const hideModal = () => setVisible(false);
     const [query, setQuery] = useState('');

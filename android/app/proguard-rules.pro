@@ -9,5 +9,3 @@
 
 # Add any project specific keep options here:
 -keep class com.steempro.mobile.BuildConfig { *; }
--keep class com.bugsnag.** { *; }
--keep class com.google.android.gms.internal.consent_sdk.** { *; }

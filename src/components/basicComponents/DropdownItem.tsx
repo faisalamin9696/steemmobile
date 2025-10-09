@@ -18,7 +18,7 @@ interface CustomDropdownProps {
 
 }
 
-const DropdownItem = (props: CustomDropdownProps): JSX.Element => {
+const DropdownItem = (props: CustomDropdownProps) => {
     const { items, value, onChange, dropdownStyle, disabled, cardStyle } = props;
 
     const { isThemeDark } = useContext(PreferencesContext);

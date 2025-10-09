@@ -14,7 +14,7 @@ import TimeAgoWrapper from '../../../components/wrappers/TimeAgoWrapper';
 import RoundSegmentedButtons from '../../../components/segmented/RoundSegmentedButtons';
 import {useRefreshByUser} from '../../../utils/useRefreshByUser';
 
-const VotersPage = ({navigation, route}): JSX.Element => {
+const VotersPage = ({navigation, route}) => {
   const {comment} = route.params;
   const hideDialog = () => navigation.pop();
   const votersKey = `${comment.permlink}-Voters`;

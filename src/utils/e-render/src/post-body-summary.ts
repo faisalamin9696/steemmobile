@@ -4,6 +4,7 @@ import {cacheGet, cacheSet} from './cache';
 import {Entry} from './types';
 import {cleanReply} from './methods';
 import {ENTITY_REGEX} from './consts';
+import CryptoJS from 'crypto-js';
 
 const {Remarkable} = require('remarkable');
 const {linkify} = require('remarkable/linkify');
@@ -56,7 +57,6 @@ function postBodySummary(
   const encEntities: string[] = [];
   if (entities && platform !== 'web') {
     entities.forEach(entity => {
-      var CryptoJS = require('react-native-crypto-js');
       const encData = CryptoJS.AES.encrypt(entity, 'key').toString();
       let encyptedEntity = CryptoJS.enc.Base64.stringify(
         CryptoJS.enc.Utf8.parse(encData),
@@ -77,7 +77,6 @@ function postBodySummary(
   //decrypt and put back entiteis
   if (platform !== 'web') {
     encEntities.forEach(encEntity => {
-      var CryptoJS = require('react-native-crypto-js');
       let decData = CryptoJS.enc.Base64.parse(encEntity).toString(
         CryptoJS.enc.Utf8,
       );

@@ -5,7 +5,7 @@ interface Props {
     buttonText?: string;
     navigation: any;
 }
-const LoginButton = (props: Props): JSX.Element => {
+const LoginButton = (props: Props) => {
     const { navigation, buttonText } = props;
 
     const navigate = () => {

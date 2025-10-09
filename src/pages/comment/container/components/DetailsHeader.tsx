@@ -31,7 +31,7 @@ interface Props {
 }
 const WIDTH = getWindowDimensions().width;
 
-const DetailsHeader = (props: Props): JSX.Element => {
+const DetailsHeader = (props: Props) => {
   const {
     comment,
     navigation,

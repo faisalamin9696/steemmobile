@@ -12,7 +12,7 @@ interface Props {
   subtitleStyle?: ViewStyle;
   handleSubTitleClick?: () => void;
 }
-const ModalHeader = (props: Props): JSX.Element => {
+const ModalHeader = (props: Props) => {
   const {
     title,
     onClose,

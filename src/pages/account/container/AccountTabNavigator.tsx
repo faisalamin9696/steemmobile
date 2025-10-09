@@ -10,7 +10,7 @@ interface Props {
   route: any;
   isAccount?: boolean;
 }
-const AccountTabNavigator = (props: Props): JSX.Element => {
+const AccountTabNavigator = (props: Props) => {
   const {isAccount} = props;
   const Tab = createMaterialTopTabNavigator();
 

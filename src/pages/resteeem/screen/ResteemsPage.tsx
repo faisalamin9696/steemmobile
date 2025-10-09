@@ -12,7 +12,7 @@ import BadgeAvatar from '../../../components/basicComponents/BadgeAvatar';
 import TimeAgoWrapper from '../../../components/wrappers/TimeAgoWrapper';
 import {useRefreshByUser} from '../../../utils/useRefreshByUser';
 
-const ResteemsPage = ({navigation, route}): JSX.Element => {
+const ResteemsPage = ({navigation, route}) => {
   const {comment} = route.params;
   const hideDialog = () => navigation.pop();
   const votersKey = `${comment.permlink}-Resteems`;

@@ -9,7 +9,7 @@ interface Props {
     style?: StyleProp<ViewStyle>
 }
 
-const LottieLinearLoading = (props: Props): JSX.Element => {
+const LottieLinearLoading = (props: Props) => {
     const { width, height, loading, style } = props;
     return <View>{useMemo(() => {
         return loading ? <AnimatedLottieView

@@ -14,7 +14,7 @@ import {useState} from 'react';
 import {getAppVersionString} from '../../../utils/utils';
 import {AppConstants} from '../../../constants/AppConstants';
 
-const AboutPage = ({navigation}): JSX.Element => {
+const AboutPage = ({navigation}) => {
   const translateY = useSharedValue(0);
   const [headerHeight, setHeaderHeight] = useState(0);
   const isScrolling = useSharedValue(false);

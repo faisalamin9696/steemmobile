@@ -26,7 +26,7 @@ import {
   removeItemFromStorage,
   saveCommentDraft,
 } from '../../../utils/realm';
-import {publishContent} from '../../../steem/CondensorApis';
+import {publishContent} from '../../../steem/CondenserApis';
 import {AppConstants} from '../../../constants/AppConstants';
 import moment from 'moment';
 import getWindowDimensions from '../../../utils/getWindowDimensions';
@@ -63,7 +63,7 @@ interface Props {
   containerStyle?: StyleProp<ViewStyle>;
   rootComment: Post | Feed;
 }
-const CommentPosting = (props: Props): JSX.Element => {
+const CommentPosting = (props: Props) => {
   const {comment, navigation, handleOnComment, onFocus, isEdit, rootComment} =
     props;
   const inputRef = useRef<any>(null);

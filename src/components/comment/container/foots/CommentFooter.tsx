@@ -17,7 +17,7 @@ import {
   deleteComment,
   mutePost,
   voteComment,
-} from '../../../../steem/CondensorApis';
+} from '../../../../steem/CondenserApis';
 import {useDispatch} from 'react-redux';
 import {saveLoginInfo} from '../../../../utils/handlers';
 import {getVoteData} from '../../../../steem/SteemApis';
@@ -54,7 +54,7 @@ interface Props {
   rewardAnchorPosition?: 'top' | 'bottom' | undefined;
 }
 
-const CommentFooter = (props: Props): JSX.Element => {
+const CommentFooter = (props: Props) => {
   let {
     navigation,
     route,

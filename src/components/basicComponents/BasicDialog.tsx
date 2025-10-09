@@ -13,7 +13,7 @@ interface Props {
   link?: string;
 }
 
-const BasicDialog = (props: Props): JSX.Element => {
+const BasicDialog = (props: Props) => {
   const {
     title,
     body,

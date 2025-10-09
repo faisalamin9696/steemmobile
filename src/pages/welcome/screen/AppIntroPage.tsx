@@ -42,6 +42,7 @@ const AppIntroPage = (props: Props) => {
   const {navigation} = props;
 
   useLayoutEffect(() => {
+    console.log(1122)
     RNBootSplash.isVisible().then(() => {
       RNBootSplash.hide({fade: true});
     });

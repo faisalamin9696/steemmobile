@@ -23,7 +23,7 @@ interface Props {
   handleOnScroll?: (e: any) => void;
   account?: string;
 }
-const TabFlatList = (props: Props): JSX.Element => {
+const TabFlatList = (props: Props) => {
   const {route, fetchData, handleOnScroll, account} = props;
   const {feed_api, type} = route.params || {
     feed_api: '',

@@ -7,7 +7,7 @@ import {PreferencesContext} from '../../../contexts/ThemeContext';
 import ProgressDialog from '../../../components/basicComponents/ProgressDialog';
 import {setSettings} from '../../../utils/realm';
 import {AppStrings} from '../../../constants/AppStrings';
-import {checkClient} from '../../../steem/CondensorApis';
+import {checkClient} from '../../../steem/CondenserApis';
 import DropdownItem from '../../../components/basicComponents/DropdownItem';
 import {useDispatch} from 'react-redux';
 import {delay} from '../../../utils/editor';
@@ -62,7 +62,7 @@ const SettingsHeading = ({
   </HStack>
 );
 
-const SettingsPage = ({navigation}): JSX.Element => {
+const SettingsPage = ({navigation}) => {
   const settings = useAppSelector(state => state.settingsReducer.value);
   const {toggleTheme, isThemeDark} = useContext(PreferencesContext);
   const loginInfo = useAppSelector(state => state.loginReducer.value);

@@ -13,23 +13,17 @@ import {AppGlobals} from '../constants/AppGlobals';
 
 export const SharedPreference = new MMKV();
 
-const options_set: Keychain.Options = {
+const options_set: Keychain.SetOptions = {
   accessControl: Keychain.ACCESS_CONTROL.USER_PRESENCE,
   accessible: Keychain.ACCESSIBLE.AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY,
-  authenticationType:
-    Keychain.AUTHENTICATION_TYPE.DEVICE_PASSCODE_OR_BIOMETRICS,
   securityLevel: Keychain.SECURITY_LEVEL.ANY,
-  rules: Keychain.SECURITY_RULES.AUTOMATIC_UPGRADE,
   authenticationPrompt: {title: 'Confirm your identity'},
 };
 
-const options_get: Keychain.Options = {
+const options_get: Keychain.SetOptions = {
   accessControl: Keychain.ACCESS_CONTROL.USER_PRESENCE,
   accessible: Keychain.ACCESSIBLE.AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY,
-  authenticationType:
-    Keychain.AUTHENTICATION_TYPE.DEVICE_PASSCODE_OR_BIOMETRICS,
   securityLevel: Keychain.SECURITY_LEVEL.ANY,
-  rules: Keychain.SECURITY_RULES.AUTOMATIC_UPGRADE,
   authenticationPrompt: {title: 'Confirm your identity'},
 };
 
@@ -105,7 +99,7 @@ export async function getCredentials(): Promise<
 }
 
 export async function getAllCredentials(): Promise<
-  false | Keychain.SharedWebCredentials
+  false | Keychain.UserCredentials
 > {
   try {
     const credentials = await Keychain.getInternetCredentials(
@@ -207,7 +201,7 @@ export const removeCredential = async (username: string): Promise<boolean> => {
 
 export function isLogin() {
   try {
-    const options: Keychain.Options = {
+    const options: Keychain.SetOptions = {
       accessControl: Keychain.ACCESS_CONTROL.USER_PRESENCE,
       accessible: Keychain.ACCESSIBLE.WHEN_UNLOCKED_THIS_DEVICE_ONLY,
       authenticationPrompt: {title: 'Confirm your identity'},

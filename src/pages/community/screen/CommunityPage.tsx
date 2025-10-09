@@ -9,7 +9,7 @@ interface Props {
   route: any;
 }
 
-const CommunityPage = (props: Props): JSX.Element => {
+const CommunityPage = (props: Props) => {
   const {navigation, route} = props;
 
   const {category} = route.params;

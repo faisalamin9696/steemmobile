@@ -40,7 +40,7 @@ import {useDispatch} from 'react-redux';
 let navigationRef: any = null;
 let linkingEventSub: EventSubscription | null = null;
 
-const HomePage = (): JSX.Element => {
+const HomePage = () => {
   const settingInfo =
     useAppSelector(state => state.settingsReducer.value) ?? getSettings();
   const dispatch = useDispatch();

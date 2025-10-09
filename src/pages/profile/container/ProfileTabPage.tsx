@@ -8,7 +8,7 @@ interface Props {
   route: any;
 }
 
-const ProfileTabPage = (props: Props): JSX.Element => {
+const ProfileTabPage = (props: Props) => {
   const {route} = props;
   const {feed_api, account} = route?.params || {
     feed_api: '',

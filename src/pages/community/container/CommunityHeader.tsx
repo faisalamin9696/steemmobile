@@ -13,7 +13,7 @@ import {MakeQueryKey, abbreviateNumber} from '../../../utils/utils';
 import BadgeAvatar from '../../../components/basicComponents/BadgeAvatar';
 import {getCredentials} from '../../../utils/realm';
 import {AppConstants} from '../../../constants/AppConstants';
-import {subscribeCommunity} from '../../../steem/CondensorApis';
+import {subscribeCommunity} from '../../../steem/CondenserApis';
 import ViewBar from '../../../components/basicComponents/ViewBar';
 import ExpandableView from '../../../components/basicComponents/ExpandableView';
 import {TouchableOpacity} from 'react-native-gesture-handler';
@@ -27,7 +27,7 @@ interface Props {
 }
 const cardHeight = 160;
 
-const CommunityHeader = (props: Props): JSX.Element => {
+const CommunityHeader = (props: Props) => {
   const {navigation, route, containerStyle} = props;
   const {feed_api, type, category, community} = route?.params;
   const loginInfo = useAppSelector(state => state.loginReducer.value);
